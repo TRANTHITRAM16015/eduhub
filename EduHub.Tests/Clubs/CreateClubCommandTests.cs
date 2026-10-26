@@ -81,7 +81,7 @@ public class GetClubByIdQueryTests
         // Act
         var result = await handler.HandleAsync(new GetClubByIdQuery(club.Id));
 
-        // Assert
+        
         Assert.NotNull(result);
         Assert.Equal(club.Id, result!.Id);
         Assert.Equal("Tech Club", result.Name);
